@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Contact us.css">
+    
+</head>
+<body>
+
+    <h2>CONTACT US</h2>
+
+<div class="container">
+  <section id="contact">
+    <form action="process_contact.php" method="POST">
+
+        <label for="name">UserName:</label>
+        <input type="text" id="UserInput" placeholder="Yourname" required>
+
+        
+
+        <label for="message">Message:</label>
+        <textarea id="messageInput" placeholder="Your message here" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+  </section>
+  </div>
+  <p>
+       <a href="https://chat.whatsapp.com/+234[0]9066990294"></a><img src="whatapp.png" width="30px">
+    </p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const contact = document.getElementById('contact');
+        
+          contact.addEventListener('submit', function (event) {
+            event.preventDefault(); 
+            let UserInput = document.getElementById('UserInput').value;
+            
+            let msg=`Thank you,(${UserInput}) ,for contacting us! We'll get back to you soon.`;
+        
+            alert(msg);
+            
+            let= UserInput.value = '';
+            let= messageInput.value = '';
+            document.getElementById('messageInput') = '';
+          });
+        });
+            </script>
+</body>
+</html>

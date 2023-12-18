@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title> Abusons-Dashboard</title>
+</head>
+<body>
+    
+    <header>
+       <marquee><h1>ABUSONS DATA SERVICES</h1></marquee> 
+    </header>
+
+    <nav>
+        <ul>
+           
+        </ul>
+    </nav>
+
+    <div class="fund-wallet">
+        <h2>Fund Your Wallet</h2>
+        <form> 
+            <button><a href="wallet.html">FUND YOUR WALLET</a></button>
+            
+        </form>
+    </div>
+    <section class="wallet">
+        <div class="balance">
+            <h2>Wallet Balance</h2>
+            <div class="highlight-box">
+                <p>NGN 0.00</p> 
+            </div>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p> 
+
+
+        <div class="options">
+    <div class="option">
+        <img src="data.png" alt="Data Icon">
+        <button onclick="buyData(buyData)">Buy Data</button>
+    </div>
+    <div class="option">
+        <img src="airtime.jpg" alt="Airtime Icon">
+        <button onclick="buyAirtime(buyAirtime)">Buy Airtime</button>
+    </div>
+    <div class="option">
+        <img src="electricity.jpg" alt="Electricity Icon">
+        <button onclick="buyElectricity(buyElectricity)">Buy Electricity</button>
+    </div> <br>
+<div class="option">
+    <img src="waec.png" alt="weac Icon">
+    <button onclick="buyData()">Weac Pin</button>
+</div>
+<div class="option">
+    <img src="school payment.png" alt="school payment Icon">
+    <button onclick="buyAirtime()">Buy Airtime</button>
+</div>
+    <div class="option">
+        <img src="school payment.png" alt="school payment Icon">
+        <button onclick="buyAirtime()">Buy Airtime</button>
+    </div>
+</section>
+<br>
+
+<div class="mode-toggle">
+    <button onclick="toggleDarkMode()">Dark Mode</button><br>
+    <button onclick="toggleLightMode()">Light Mode</button><br>
+</div>
+</div>
+
+</div>
+
+    <script>
+
+function buyData() {
+    
+    window.location.href = 'buy_data.html';
+}
+
+function buyAirtime() {
+    
+    window.location.href = 'buy_airtime.html';
+}
+
+function buyElectricity() {
+    
+    window.location.href = 'buy_electricity.html';
+}
+
+function toggleDarkMode() {
+    document.body.classList.add('dark-mode');
+}
+
+function toggleLightMode() {
+    document.body.classList.remove('dark-mode');
+}
+
+</script>
+
+</body>
+</html>

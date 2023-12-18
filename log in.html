@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abusons Data Services</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <p>
+       <button><marquee><h2>Welcome to Abusons Data Services</h2></marquee></button><br>
+       </p>
+       <form action="process_contact.php" method="POST">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <a href="forgot password?">forgot password?</a><br>
+            <button type="submit" onclick="redirecttosignin(dashboard.html)">Sign In</button><br>
+            <a href="dashboard.html"></a>
+            <button type="button" onclick="redirectToSignUp(form.html)">Sign Up</button>
+            <a href=""></a> 
+        </form>
+    </div>
+    <?php
+    <form action="process_log in.php" method="POST">
+    
+    
+    
+    
+    
+    
+
+    <script>
+    
+
+            document.getElementById(redirecttosignup) 
+                const signup = document.getElementsByTagName('redirecttosignup')
+            function redirectToSignUp()  {
+                return window.location.href = 'form.html';
+            const loginForm = document.getElementById('login-form');
+            loginForm.addEventListener('submit', async (e) => {
+                e.preventDefault();   
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                const response = await fetch('/api/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ username, password })
+                });
+            
+                if (response.ok) {
+                    window.location.href = '/dashboard.html';
+                } else {
+                    alert('Login failed. Please check your credentials.');
+                }
+            })};
+            
+            </script>
+            
+</body> 
+
+
+</html>

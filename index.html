@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HOME-PAGE</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1></h1>
+            </div>
+            <div class="menu">
+                <button id="openDrawer">☰ Menu</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>WELCOME TO ABUSONS DATA SERVICES</h2>
+            <div class="animated-pictures">
+                <marquee><img src="data 2.png" width="600px"></marquee>
+            </div>
+        </section>
+
+        <section class="drawer" id="myDrawer">
+            <button id="closeDrawer">✖ Close</button>
+            <ul>
+                <li><a href="profile">Profile</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="wallet.html">Fund Wallet</a></li>
+                <li><a href="Contact us .html">Contact Us</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="logout">Logout</a></li>
+                
+            </ul>
+        </section>
+
+        <section class="content" id="home">
+            
+        </section>
+
+        <section class="content" id="contact">
+            
+        </section>
+
+        <section class="content" id="services">
+
+        </section>
+
+        <section class="content" id="dashboard">
+            
+        </section>
+        <footer>
+            <p>&copy; 2023 ABUSONS DATA SERVICES </p>
+        </footer>
+    </main>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const openDrawerButton = document.getElementById("openDrawer");
+    const closeDrawerButton = document.getElementById("closeDrawer");
+    const myDrawer = document.getElementById("myDrawer");
+
+    openDrawerButton.addEventListener("click", function () {
+        myDrawer.style.left = "0";
+    });
+
+    closeDrawerButton.addEventListener("click", function () {
+        myDrawer.style.left = "-250px";
+    });
+});
+
+    
+    
+    </script>
+</body>
+</html>
